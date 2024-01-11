@@ -27,5 +27,5 @@ const theme: GlobalThemeOverrides = {
 @import url('https://fonts.loli.net/css2?family=Raleway:wght@400;500;700&display=swap');
 @import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap');
 @import url('https://fonts.loli.net/css2?family=Mulish:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap');
 </style>
