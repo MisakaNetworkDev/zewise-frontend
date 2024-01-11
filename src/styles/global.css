@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primaryColor: rgb(134, 179, 0);
+}
+
+body {
+    font-family: 'Mulish', 'Noto Sans SC', sans-serif;
+}

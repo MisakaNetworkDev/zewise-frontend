@@ -1,7 +1,31 @@
+<template>
+  <n-config-provider :theme-overrides="theme">
+    <RouterView />
+  </n-config-provider>
+</template>
+
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { NConfigProvider, type GlobalThemeOverrides } from 'naive-ui'
+
+const theme: GlobalThemeOverrides = {
+  common: {
+    primaryColor: 'rgb(134, 179, 0)',
+    borderRadius: '12px'
+  },
+  Button: {
+    textColor: 'rgb(134, 179, 0)'
+  }
+}
 </script>
 
-<template>
-  <RouterView />
-</template>
+<style scoped>
+/* iconfont css */
+@import url('//at.alicdn.com/t/c/font_4408030_pck7mz8cigh.css');
+
+/* fonts */
+@import url('https://fonts.loli.net/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap');
+@import url('https://fonts.loli.net/css2?family=Mulish:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
