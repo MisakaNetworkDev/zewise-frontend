@@ -64,7 +64,8 @@
 
 <style scoped>
 .background {
-  @apply fixed w-4/5 h-full top-0 right-0  bg-cover -z-20;
+  @apply fixed w-full h-full top-0 right-0  bg-cover -z-20;
+  @apply xl:w-4/5;
   background-image: url('@/assets/background.jpg');
 }
 
@@ -87,7 +88,8 @@
 }
 
 .shapes {
-  @apply fixed top-0 left-0 block -z-10;
+  @apply hidden fixed top-0 left-0 -z-10;
+  @apply xl:block;
 }
 
 .shapes > .shape_1 {
@@ -101,11 +103,14 @@
 }
 
 .auth {
-  @apply fixed top-0 left-0 w-1/3 h-full;
+  @apply fixed top-0 left-0 w-full h-full;
+  @apply xl:w-1/3;
 }
 
 .auth > .card {
   @apply top-1/2 w-[75%] mx-auto drop-shadow-xl -translate-y-1/2;
+  @apply md:w-[50%];
+  @apply xl:w-[75%];
 }
 
 .auth > .card .title {
