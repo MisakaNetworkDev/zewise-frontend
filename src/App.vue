@@ -1,6 +1,8 @@
 <template>
   <n-config-provider :theme-overrides="theme">
-    <RouterView />
+    <n-message-provider>
+      <RouterView />
+    </n-message-provider>
   </n-config-provider>
 </template>
 
